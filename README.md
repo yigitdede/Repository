@@ -1,7 +1,4 @@
-# Fish Classification Project
-
-## Proje Hakkında
-Bu proje, farklı türdeki balıkları sınıflandırmak için derin öğrenme yöntemleri kullanarak bir model geliştirmeyi amaçlamaktadır. Proje, büyük ölçekli bir balık veri kümesi kullanarak gerçekleştirildi ve TensorFlow ve Keras kütüphaneleriyle bir yapay sinir ağı (ANN) modeli oluşturuldu.
+# Sınıflandırma Projesi
 
 ## İçindekiler
 - [Veri Seti](#veri-seti)
@@ -9,11 +6,12 @@ Bu proje, farklı türdeki balıkları sınıflandırmak için derin öğrenme y
 - [Model Yapısı](#model-yapısı)
 - [Eğitim Süreci](#eğitim-süreci)
 - [Sonuçlar](#sonuçlar)
-- [Karmaşıklık Matrisi](#karmaşıklık-matrisi)
+- [Karmaşıklık Matrisi](#karmaşık-matris)
 - [Nasıl Kullanılır](#nasıl-kullanılır)
+- [Kaggle Proje Linki](#kaggle-proje-linki)
 
 ## Veri Seti
-Proje, `A Large Scale Fish Dataset` adlı bir veri setini kullanmaktadır. Veri setinde balık türlerine ait resimler bulunmaktadır. Her resim, ilgili balık türü etiketiyle birlikte yüklenmiştir.
+Proje, A Large Scale Fish Dataset isimli veri setini kullanmaktadır. Veri seti, farklı türde balıkların görüntülerini içermektedir.
 
 ## Gereksinimler
 - Python 3.x
@@ -26,28 +24,19 @@ Proje, `A Large Scale Fish Dataset` adlı bir veri setini kullanmaktadır. Veri 
 - scikit-learn
 
 ## Model Yapısı
-Model, aşağıdaki katmanlardan oluşmaktadır:
-- Giriş katmanı: 512 nöron, ReLU aktivasyon fonksiyonu
-- Gizli katman 1: 512 nöron, ReLU aktivasyon fonksiyonu
-- Gizli katman 2: 256 nöron, ReLU aktivasyon fonksiyonu
-- Gizli katman 3: 128 nöron, ReLU aktivasyon fonksiyonu
-- Çıkış katmanı: 9 nöron, softmax aktivasyon fonksiyonu
+Model, üç gizli katman ve bir çıkış katmanından oluşan bir yapıya sahiptir. 
+- İlk gizli katman: 512 nöron
+- İkinci gizli katman: 256 nöron
+- Üçüncü gizli katman: 128 nöron
 
 ## Eğitim Süreci
-Model, 100 epoch boyunca, 64'lü batch boyutlarıyla eğitilmiştir. Eğitim sırasında erken durdurma (EarlyStopping) kullanılarak overfitting önlenmiştir.
-
-```python
-from keras.callbacks import EarlyStopping
-
-# EarlyStopping tanımı
-early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
-
-# Model eğitimi
-results = model.fit(X_train_flattened, y_train_one_hot, epochs=100, batch_size=64, validation_data=(X_test_flattened, y_test_one_hot), callbacks=[early_stopping])
-
+Model, %80 eğitim ve %20 test verisi ile eğitilmiştir. Eğitim süreci sırasında, erken durdurma (early stopping) uygulanmıştır.
 
 ## Sonuçlar
-Modelin test doğruluğu hesaplandı ve sonuçlar ekrana yazdırıldı. Ayrıca, modelin eğitim sürecindeki kayıp (loss) ve doğruluk (accuracy) grafikleri çizildi.
+Modelin test verisi üzerindeki doğruluğu hesaplanmış ve sonuçlar grafiklerle gösterilmiştir.
+
+## Confusion(Karmaşıklık) Matrisi
+Modelin başarısını daha iyi değerlendirmek için karmaşıklık matrisi oluşturulmuştur.
 
 ## Kaggle Proje Linki
-Projeye [buradan][(https://www.kaggle.com/your-kaggle-link)](https://www.kaggle.com/code/yigitdede/classification-fish?scriptVersionId=202891630) ulaşabilirsiniz.
+Proje linki: [Kaggle Projesi](https://www.kaggle.com/code/yigitdede/classification-fish?scriptVersionId=202891630)
