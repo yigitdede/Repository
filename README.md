@@ -6,7 +6,7 @@
 - [Model Yapısı](#model-yapısı)
 - [Eğitim Süreci](#eğitim-süreci)
 - [Sonuçlar](#sonuçlar)
-- [Karmaşıklık Matrisi](#karmaşık-matris)
+- [Karmaşıklık Matrisi](#Karmaşıklık-Matrisi)
 - [Kaggle Proje Linki](#kaggle-proje-linki)
 
 ## Veri Seti
