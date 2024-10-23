@@ -46,7 +46,7 @@ early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_wei
 results = model.fit(X_train_flattened, y_train_one_hot, epochs=100, batch_size=64, validation_data=(X_test_flattened, y_test_one_hot), callbacks=[early_stopping])
 
 
-##Sonuçlar
+## Sonuçlar
 Modelin test doğruluğu hesaplandı ve sonuçlar ekrana yazdırıldı. Ayrıca, modelin eğitim sürecindeki kayıp (loss) ve doğruluk (accuracy) grafikleri çizildi.
 
 ## Kaggle Proje Linki
