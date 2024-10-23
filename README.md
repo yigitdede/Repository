@@ -24,10 +24,12 @@ Proje, A Large Scale Fish Dataset isimli veri setini kullanmaktadır. Veri seti,
 - scikit-learn
 
 ## Model Yapısı
-Model, üç gizli katman ve bir çıkış katmanından oluşan bir yapıya sahiptir. 
-- İlk gizli katman: 512 nöron
-- İkinci gizli katman: 256 nöron
-- Üçüncü gizli katman: 128 nöron
+Model, aşağıdaki katmanlardan oluşmaktadır:
+- Giriş katmanı: 512 nöron, ReLU aktivasyon fonksiyonu
+- Gizli katman 1: 512 nöron, ReLU aktivasyon fonksiyonu
+- Gizli katman 2: 256 nöron, ReLU aktivasyon fonksiyonu
+- Gizli katman 3: 128 nöron, ReLU aktivasyon fonksiyonu
+- Çıkış katmanı: 9 nöron, softmax aktivasyon fonksiyonu
 
 ## Eğitim Süreci
 Model, %80 eğitim ve %20 test verisi ile eğitilmiştir. Eğitim süreci sırasında, erken durdurma (early stopping) uygulanmıştır.
