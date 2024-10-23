@@ -7,7 +7,6 @@
 - [Eğitim Süreci](#eğitim-süreci)
 - [Sonuçlar](#sonuçlar)
 - [Karmaşıklık Matrisi](#karmaşık-matris)
-- [Nasıl Kullanılır](#nasıl-kullanılır)
 - [Kaggle Proje Linki](#kaggle-proje-linki)
 
 ## Veri Seti
@@ -37,7 +36,7 @@ Model, %80 eğitim ve %20 test verisi ile eğitilmiştir. Eğitim süreci sıras
 ## Sonuçlar
 Modelin test verisi üzerindeki doğruluğu hesaplanmış ve sonuçlar grafiklerle gösterilmiştir.
 
-## Confusion(Karmaşıklık) Matrisi
+## Karmaşıklık Matrisi
 Modelin başarısını daha iyi değerlendirmek için karmaşıklık matrisi oluşturulmuştur.
 
 ## Kaggle Proje Linki
