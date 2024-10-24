@@ -34,7 +34,7 @@ Model, aşağıdaki katmanlardan oluşmaktadır:
 Model, %80 eğitim ve %20 test verisi ile eğitilmiştir. Eğitim süreci sırasında, erken durdurma (early stopping) uygulanmıştır.
 
 ## Sonuçlar
-Modelin test verisi üzerindeki doğruluğu hesaplanmış ve sonuçlar grafiklerle gösterilmiştir.
+Modelin test verisi üzerindeki doğruluğu %95.94 olarak hesaplanmış ve sonuçlar grafiklerle gösterilmiştir.
 
 ## Karmaşıklık Matrisi
 Modelin başarısını daha iyi değerlendirmek için karmaşıklık matrisi oluşturulmuştur.
