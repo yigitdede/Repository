@@ -40,4 +40,4 @@ Modelin test verisi üzerindeki doğruluğu hesaplanmış ve sonuçlar grafikler
 Modelin başarısını daha iyi değerlendirmek için karmaşıklık matrisi oluşturulmuştur.
 
 ## Kaggle Proje Linki
-Proje linki: [Kaggle Projesi](https://www.kaggle.com/code/yigitdede/classification-fish?scriptVersionId=202891630)
+Proje linki: [Kaggle Projesi](https://www.kaggle.com/code/yigitdede/classification-fish)
